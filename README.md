@@ -1,6 +1,6 @@
 # Antigravity 자동화용 쉘 스크립트.
 
-`antigravity_send.sh`는 표준입력으로 받은 프롬프트를 Antigravity에 붙여넣고 전송해준다.
+`antigravity_send.sh`는 터미널로 입력으로 받은 프롬프트를 Antigravity에 붙여넣고 전송해준다.
 macOS에서 동작하며 단축키/접근성 권한이 필요하다.
 
 ![Automation demo](assets/automation.gif)
