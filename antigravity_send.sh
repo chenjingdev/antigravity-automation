@@ -4,8 +4,10 @@ set -euo pipefail
 prompt="$(cat)"
 [[ -z "$prompt" ]] && { echo "EMPTY_PROMPT" >&2; exit 1; }
 
+final_prompt="${prompt}"
+
 # Antigravity 활성화 -> 새 세션 -> 입력 포커스 -> 붙여넣기 -> 전송
-/usr/bin/osascript - "$prompt" <<'APPLESCRIPT'
+/usr/bin/osascript - "$final_prompt" <<'APPLESCRIPT'
 on run argv
   set msg to item 1 of argv
   set the clipboard to msg
